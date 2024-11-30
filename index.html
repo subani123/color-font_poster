@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+            <h2 class="heading">
+                <i>Style Your Text</i>
+            </h1>
+            <div class="container">
+                <div class="container-left">
+                    <h1 contenteditable="true" class="typing_box" id="textbox"></h1>
+                    <button type="button" id="button" class="button"">Download</button>
+                </div>
+                <div class="container-right">
+                    <div class="container1">
+                        <h2 class="heading1">Background Color</h2>
+                        <div class="bg_colors">
+                            <button onclick="bgcolor('silver')" class="colors" style="background-color: silver;"></button>
+                            <button onclick="bgcolor('gray')" class="colors" style="background-color: gray;"></button>
+                            <button onclick="bgcolor('maroon')" class="colors" style="background-color: maroon;"></button>
+                            <button onclick="bgcolor('red')" class="colors" style="background-color: red;"></button>
+                            <button onclick="bgcolor('purple')" class="colors" style="background-color: purple;"></button>
+                            <button onclick="bgcolor('fuchsia')" class="colors" style="background-color: fuchsia;"></button>
+                            <button onclick="bgcolor('green')" class="colors" style="background-color: green;"></button>
+                            <button onclick="bgcolor('yellowgreen')" class="colors" style="background-color: yellowgreen;"></button>
+                            <button onclick="bgcolor('lime')" class="colors" style="background-color: lime;"></button>
+                            <button onclick="bgcolor('olive')" class="colors" style="background-color: olive;"></button>
+                            <button onclick="bgcolor('yellow')" class="colors" style="background-color: yellow;"></button>
+                            <button onclick="bgcolor('navy')" class="colors" style="background-color: navy;"></button>
+                            <button onclick="bgcolor('blue')" class="colors" style="background-color: blue;"></button>
+                            <button onclick="bgcolor('teal')" class="colors" style="background-color: teal;"></button>
+                            <button onclick="bgcolor('aqua')" class="colors" style="background-color: aqua;"></button>
+                            <button onclick="bgcolor('aquamarine')" class="colors" style="background-color: aquamarine;"></button>
+                            <button onclick="bgcolor('azure')" class="colors" style="background-color: azure;"></button>
+                            <button onclick="bgcolor('beige')" class="colors" style="background-color: beige;"></button>
+                            <button onclick="bgcolor('bisque')" class="colors" style="background-color: bisque;"></button>
+                            <button onclick="bgcolor('antiquewhite')" class="colors" style="background-color: antiquewhite;"></button>
+                            <button onclick="bgcolor('peru')" class="colors" style="background-color: peru;"></button>
+                            <button onclick="bgcolor('pink')" class="colors" style="background-color: pink;"></button>
+                            <button onclick="bgcolor('lightpink')" class="colors" style="background-color: lightpink;"></button>
+                            <button onclick="bgcolor('lightsalmon')" class="colors" style="background-color: lightsalmon;"></button>
+                            <button onclick="bgcolor('plum')" class="colors" style="background-color: plum;"></button>
+                            <button onclick="bgcolor('powderblue')" class="colors" style="background-color: powderblue;"></button>
+                            <button onclick="bgcolor('rosybrown')" class="colors" style="background-color: rosybrown;"></button>
+                            <button onclick="bgcolor('seagreen')" class="colors" style="background-color: seagreen;"></button>
+                            <button onclick="bgcolor('lightseagreen')" class="colors" style="background-color: lightseagreen;"></button>
+                            <button onclick="bgcolor('lightskyblue')" class="colors" style="background-color: lightskyblue;"></button>
+                            <button onclick="bgcolor('aliceblue')" class="colors" style="background-color: aliceblue;"></button>
+                            <button onclick="bgcolor('lawngreen')" class="colors" style="background-color: lawngreen;"></button>
+                            <button onclick="bgcolor('lemonchiffon')" class="colors" style="background-color: lemonchiffon;"></button>
+                            <button onclick="bgcolor('lightcoral')" class="colors" style="background-color: lightcoral;"></button>
+                            <button onclick="bgcolor('lightcyan')" class="colors" style="background-color: lightcyan;"></button>
+                            <button onclick="bgcolor('lightgoldenrodyellow')" class="colors" style="background-color: lightgoldenrodyellow;"></button>
+                           
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <h2 class="heading2">Font Color</h2>
+                        <div class="font_colors">
+                                <button onclick="fontcolor('silver')" class="colors" style="background-color: silver;"></button>
+                                <button onclick="fontcolor('gray')" class="colors" style="background-color: gray;"></button>
+                                <button onclick="fontcolor('maroon')" class="colors" style="background-color: maroon;"></button>
+                                <button onclick="fontcolor('red')" class="colors" style="background-color: red;"></button>
+                                <button onclick="fontcolor('purple')" class="colors" style="background-color: purple;"></button>
+                                <button onclick="fontcolor('fuchsia')" class="colors" style="background-color: fuchsia;"></button>
+                                <button onclick="fontcolor('green')" class="colors" style="background-color: green;"></button>
+                                <button onclick="fontcolor('yellowgreen')" class="colors" style="background-color: yellowgreen;"></button>
+                                <button onclick="fontcolor('lime')" class="colors" style="background-color: lime;"></button>
+                                <button onclick="fontcolor('olive')" class="colors" style="background-color: olive;"></button>
+                                <button onclick="fontcolor('yellow')" class="colors" style="background-color: yellow;"></button>
+                                <button onclick="fontcolor('navy')" class="colors" style="background-color: navy;"></button>
+                                <button onclick="fontcolor('blue')" class="colors" style="background-color: blue;"></button>
+                                <button onclick="fontcolor('teal')" class="colors" style="background-color: teal;"></button>
+                                <button onclick="fontcolor('aqua')" class="colors" style="background-color: aqua;"></button>
+                                <button onclick="fontcolor('aquamarine')" class="colors" style="background-color: aquamarine;"></button>
+                                <button onclick="fontcolor('azure')" class="colors" style="background-color: azure;"></button>
+                                <button onclick="fontcolor('beige')" class="colors" style="background-color: beige;"></button>
+                                <button onclick="fontcolor('bisque')" class="colors" style="background-color: bisque;"></button>
+                                <button onclick="fontcolor('antiquewhite')" class="colors" style="background-color: antiquewhite;"></button>
+                                <button onclick="fontcolor('peru')" class="colors" style="background-color: peru;"></button>
+                                <button onclick="fontcolor('pink')" class="colors" style="background-color: pink;"></button>
+                                <button onclick="fontcolor('lightpink')" class="colors" style="background-color: lightpink;"></button>
+                                <button onclick="fontcolor('lightsalmon')" class="colors" style="background-color: lightsalmon;"></button>
+                                <button onclick="fontcolor('plum')" class="colors" style="background-color: plum;"></button>
+                                <button onclick="fontcolor('powderblue')" class="colors" style="background-color: powderblue;"></button>
+                                <button onclick="fontcolor('rosybrown')" class="colors" style="background-color: rosybrown;"></button>
+                                <button onclick="fontcolor('seagreen')" class="colors" style="background-color: seagreen;"></button>
+                                <button onclick="fontcolor('lightseagreen')" class="colors" style="background-color: lightseagreen;"></button>
+                                <button onclick="fontcolor('lightskyblue')" class="colors" style="background-color: lightskyblue;"></button>
+                                <button onclick="fontcolor('aliceblue')" class="colors" style="background-color: aliceblue;"></button>
+                                <button onclick="fontcolor('lawngreen')" class="colors" style="background-color: lawngreen;"></button>
+                                <button onclick="fontcolor('lemonchiffon')" class="colors" style="background-color: lemonchiffon;"></button>
+                                <button onclick="fontcolor('lightcoral')" class="colors" style="background-color: lightcoral;"></button>
+                                <button onclick="fontcolor('lightcyan')" class="colors" style="background-color: lightcyan;"></button>
+                                <button onclick="fontcolor('lightgoldenrodyellow')" class="colors" style="background-color: lightgoldenrodyellow;"></button>
+                                  
+                        </div>
+                    </div>
+                    <div class="container3">
+                     <h2 class="heading3">Font Style</h2>
+                      <div class="font_styles">
+                        <button class="fontcolor" onclick="fontstyele('Cursive')" style="font-family: Cursive;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Fantasy')" style="font-family: Fantasy;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Serif')" style="font-family: Serif;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Sans-serif')" style="font-family: Sans-serif;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Arial Narrow')" style="font-family: Arial Narrow;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Times')" style="font-family: Times;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Helvetica')" style="font-family: Helvetica;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Courier')" style="font-family: Courier;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Brush Script')" style="font-family: Brush Script;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Calibri')" style="font-family: Calibri;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Optima')" style="font-family: Optima;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Cambria')" style="font-family: Cambria;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Garamond')" style="font-family: Garamond;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Georgia')" style="font-family: Georgia;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Monaco')" style="font-family: Monaco;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Trebuchet MS')" style="font-family: Trebuchet MS;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Tahoma')" style="font-family:Tahoma;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Lucida')" style="font-family: Lucida;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Verdana')" style="font-family: Verdana;">Hello</button>
+                        <button class="fontcolor" onclick="fontstyele('Arial')" style="font-family:Arial;">Hello</button>
+
+                  </div>
+                    </div>
+                    <div class="container4">
+                        <h2 class="heading4">Font Size</h2>
+                        <div class="font_size_type">
+                            <button class="font_sizes" onclick="fontsize('5px')">5</button>
+                            <button class="font_sizes" onclick="fontsize('10px')">10</button>
+                            <button class="font_sizes" onclick="fontsize('15px')">15</button>
+                            <button class="font_sizes" onclick="fontsize('20px')">20</button>
+                            <button class="font_sizes" onclick="fontsize('25px')">25</button>
+                            <button class="font_sizes" onclick="fontsize('30px')">30</button>
+                            <button class="font_sizes" onclick="fontsize('35px')">35</button>
+                            <button class="font_sizes" onclick="fontsize('40px')">40</button>
+                            <button class="font_sizes" onclick="fontsize('45px')">45</button>
+                            <button class="font_sizes" onclick="fontsize('50px')">50</button>
+                            <button class="font_sizes" onclick="fontsize('55px')">55</button>
+                            <button class="font_sizes" onclick="fontsize('60px')">60</button>
+                            <button class="font_sizes" onclick="fontsize('65px')">65</button>
+                            <button class="font_sizes" onclick="fontsize('70px')">70</button>
+                            <button class="font_sizes" onclick="fontsize('75px')">75</button>
+                            <button class="font_sizes" onclick="fontsize('80px')">80</button>
+                            <button class="font_sizes" onclick="fontsize('85px')">85</button>
+                            <button class="font_sizes" onclick="fontsize('90px')">90</button>
+                            <button class="font_sizes" onclick="fontsize('95px')">95</button>
+                            <button class="font_sizes" onclick="fontsize('100px')">100</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </body>
+    <script src="script.js"></script>
+</html>
